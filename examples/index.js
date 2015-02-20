@@ -1,3 +1,12 @@
 'use strict';
 
-var module = require( './../lib' );
+var isObjectArray = require( './../lib' );
+
+console.log( isObjectArray( [{},{}] ) );
+// returns true
+
+console.log( isObjectArray( [] ) );
+// returns false
+
+console.log( isObjectArray( [{},[]] ) );
+// returns false
